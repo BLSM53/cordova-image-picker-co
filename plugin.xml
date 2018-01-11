@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <plugin 
     xmlns="http://www.phonegap.com/ns/plugins/1.0" 
-    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-image-picker" version="2.2.5">
+    xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-image-picker-s" version="2.2.5">
     <name>ImagePickerS</name>
     <description>        This plugin allows selection of multiple images from the camera roll / gallery in a phonegap app    </description>
     <license>MIT</license>
@@ -67,9 +67,6 @@
             <feature name="ImagePickerS">
                 <param name="android-package" value="com.synconset.ImagePicker"/>
             </feature>
-        </config-file>
-        <config-file target="AndroidManifest.xml" parent="/manifest/application">
-            <activity android:label="@string/multi_app_name" android:name="com.synconset.MultiImageChooserActivity" android:theme="@style/Theme.AppCompat.Light"></activity>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
