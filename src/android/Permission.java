@@ -29,7 +29,7 @@ public class Permission extends CordovaPlugin {
     private CallbackContext callbackContext;
 
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
-        Activity activity = this.cordova.getActivity(); 
+        this.callbackContext = callbackContext;
         if (ACTION_HAS_READ_PERMISSION.equals(action)) {
             callbackContext.sendPluginResult(new PluginResult(PluginResult.Status.OK, hasReadPermission()));
             return true; 
