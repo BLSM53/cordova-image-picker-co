@@ -5,7 +5,8 @@
     "cordova": {
         "id": "cordova-plugin-read-permission",
         "platforms": [
-            "android"
+            "android",
+            "ios"
         ]
     },
     "repository": {
