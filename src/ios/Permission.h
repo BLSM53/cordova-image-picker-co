@@ -9,7 +9,7 @@
 #import <Cordova/CDVPlugin.h>
 
 
-@interface SOSPicker : CDVPlugin < UINavigationControllerDelegate, UIScrollViewDelegate>
+@interface Permission : CDVPlugin < UINavigationControllerDelegate, UIScrollViewDelegate>
 
 @property (copy)   NSString* callbackId;
 
