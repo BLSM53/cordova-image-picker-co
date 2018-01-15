@@ -1,0 +1,26 @@
+{
+    "name": "cordova-plugin-permission",
+    "version": "1.0.0",
+    "description": "Cordova permission Plugin",
+    "cordova": {
+        "id": "cordova-plugin-permission",
+        "platforms": [
+            "android"
+        ]
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/BLSM53/cordova-image-picker-co"
+    },
+    "keywords": [
+        "cordova",
+        "cordova-ios",
+        "cordova-android",
+        "permission"
+    ],
+    "author": "matthew",
+    "license": "Apache-2.0",
+    "devDependencies": {
+        "jshint": "0.0.1"
+    }
+}
