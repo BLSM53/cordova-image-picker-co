@@ -5,13 +5,16 @@
     <name>Permission</name>
     <description>Description</description>
     <js-module name="Permission" src="www/Permission.js">
-        <clobbers target="cordova.plugins.Permission"/>
+        <clobbers target="plugins.Permission"/>
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="cordova-plugin-read-permission">
                 <param name="android-package" value="com.blsm.permission"/>
             </feature>
+        </config-file>
+        <config-file target="AndroidManifest.xml" parent="/manifest">
+            <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
         <source-file src="src/android/Permission.java" target-dir="src/org/apache/cordova/permission"/>
     </platform>
