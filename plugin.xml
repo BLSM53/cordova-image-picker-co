@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin id="cordova-plugin-permission" version="0.0.1" 
+<plugin id="cordova-plugin-blsm-permission" version="0.0.1" 
         xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Permission</name>
@@ -9,10 +9,10 @@
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="cordova-plugin-permission">
+            <feature name="cordova-plugin-blsm-permission">
                 <param name="android-package" value="com.blsm.permission"/>
             </feature>
         </config-file>
-        <source-file src="src/android/Permission.java" target-dir="src/cn/net/wenzhixin/cordova"/>
+        <source-file src="src/android/Permission.java" target-dir="src/org/apache/cordova/permission"/>
     </platform>
 </plugin>
