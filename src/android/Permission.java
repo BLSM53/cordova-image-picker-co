@@ -1,4 +1,4 @@
-package com.synconset; 
+package com.blsm.permission; 
 
 import org.apache.cordova.CallbackContext; 
 import org.apache.cordova.CordovaPlugin; 
