@@ -1,5 +1,13 @@
-var exec = require('cordova/exec');
+var Permission = function() {
 
-exports.getAlbumPermission = function(success, error) {
-    exec(success, error, "Permissio", "getAlbumPermission", []);
 };
+
+Permission.prototype.hasReadPermission = function(callback) {
+    return cordova.exec(callback, null, "Permission", "hasPermission", []);
+};
+
+Permission.prototype.requestReadPermission = function(callback) {
+    return cordova.exec(callback, null, "Permission", "requestPermission", []);
+};
+
+window.Permission = new Permission();
