@@ -11,6 +11,23 @@
     <js-module name="Permission" src="www/Permission.js">
         <clobbers target="plugins.permission"/>
     </js-module>
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="Permission">
+                <param name="ios-package" value="Permission"/>
+            </feature>
+        </config-file>
+        <preference name="PHOTO_LIBRARY_USAGE_DESCRIPTION" default=" " />
+        <config-file target="*-Info.plist" parent="NSPhotoLibraryUsageDescription">
+            <string>$PHOTO_LIBRARY_USAGE_DESCRIPTION</string>
+        </config-file>
+        <header-file src="src/ios/Permission.h" />
+        <source-file src="src/ios/Permission.m" />
+        <framework src="Accelerate.framework" />
+        <framework src="Security.framework" />
+        <framework src="SystemConfiguration.framework" />
+        <framework src="QuartzCore.framework" />
+    </platform>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
             <feature name="Permission">
