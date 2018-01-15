@@ -4,18 +4,25 @@
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Permission</name>
     <description>Description</description>
+    <license>MIT</license>
+    <engines>
+        <engine name="cordova" version=">=3.5.0" />
+    </engines>
     <js-module name="Permission" src="www/Permission.js">
-        <clobbers target="plugins.Permission"/>
+        <clobbers target="plugins.permission"/>
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="cordova-plugin-read-permission">
-                <param name="android-package" value="com.blsm.permission"/>
+            <feature name="Permission">
+                <param name="android-package" value="com.blsm.permission.Permission"/>
             </feature>
         </config-file>
         <config-file target="AndroidManifest.xml" parent="/manifest">
             <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
         </config-file>
+        <framework src="com.android.support:appcompat-v7:23+" />
         <source-file src="src/android/Permission.java" target-dir="src/org/apache/cordova/permission"/>
+        <framework src="src/android/ignorelinterrors.gradle" custom="true" type="gradleReference"/>
+        <framework src="src/android/androidtarget.gradle" custom="true" type="gradleReference"/>
     </platform>
 </plugin>
