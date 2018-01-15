@@ -1,9 +1,9 @@
 {
-    "name": "cordova-plugin-permission",
-    "version": "1.0.0",
+    "name": "cordova-plugin-blsm-permission",
+    "version": "1.0.1",
     "description": "Cordova permission Plugin",
     "cordova": {
-        "id": "cordova-plugin-permission",
+        "id": "cordova-plugin-blsm-permission",
         "platforms": [
             "android"
         ]
