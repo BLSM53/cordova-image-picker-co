@@ -1,16 +1,16 @@
 {
-    "name": "cordova-plugin-blsm-permission",
-    "version": "1.0.1",
+    "name": "cordova-plugin-read-permission",
+    "version": "1.0.0",
     "description": "Cordova permission Plugin",
     "cordova": {
-        "id": "cordova-plugin-blsm-permission",
+        "id": "cordova-plugin-read-permission",
         "platforms": [
             "android"
         ]
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/BLSM53/cordova-image-picker-co"
+        "url": "https://github.com/BLSM53/cordova-plugin-read-permission"
     },
     "keywords": [
         "cordova",

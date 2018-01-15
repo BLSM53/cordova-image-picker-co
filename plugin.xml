@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<plugin id="cordova-plugin-blsm-permission" version="0.0.1" 
+<plugin id="cordova-plugin-read-permission" version="0.0.1" 
         xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android">
     <name>Permission</name>
@@ -9,7 +9,7 @@
     </js-module>
     <platform name="android">
         <config-file parent="/*" target="res/xml/config.xml">
-            <feature name="cordova-plugin-blsm-permission">
+            <feature name="cordova-plugin-read-permission">
                 <param name="android-package" value="com.blsm.permission"/>
             </feature>
         </config-file>
