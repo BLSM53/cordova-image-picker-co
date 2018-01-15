@@ -25,6 +25,9 @@ public class Permission extends CordovaPlugin {
     private static final String ACTION_HAS_READ_PERMISSION = "hasPermission";
     private static final String ACTION_REQUEST_READ_PERMISSION = "requestPermission";
 
+    private static final int PERMISSION_REQUEST_CODE = 100;
+    private CallbackContext callbackContext;
+
     public boolean execute(String action, JSONArray args, CallbackContext callbackContext) throws JSONException {
         Activity activity = this.cordova.getActivity(); 
         if (ACTION_HAS_READ_PERMISSION.equals(action)) {
