@@ -22,8 +22,8 @@ import android.support.v4.content.ContextCompat;
 
 public class Permission extends CordovaPlugin {
 
-    private static final String ACTION_HAS_READ_PERMISSION = "hasPermission";
-    private static final String ACTION_REQUEST_READ_PERMISSION = "requestPermission";
+    private static final String ACTION_HAS_READ_PERMISSION = "hasReadPermission";
+    private static final String ACTION_REQUEST_READ_PERMISSION = "requestReadPermission";
 
     private static final int PERMISSION_REQUEST_CODE = 100;
     private CallbackContext callbackContext;

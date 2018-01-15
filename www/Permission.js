@@ -7,7 +7,7 @@ Permission.prototype.hasReadPermission = function(callback) {
 };
 
 Permission.prototype.requestReadPermission = function(callback) {
-    return cordova.exec(callback, null, "Permission", "hasReadPermission", []);
+    return cordova.exec(callback, null, "Permission", "requestReadPermission", []);
 };
 
 window.Permission = new Permission();
